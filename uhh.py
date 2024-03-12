@@ -22,7 +22,7 @@ class BackwardChaining:
 
 known_facts = ['fact_A', 'fact_B','fact_C']
 rule_base = {'goal_A': ['fact_A', 'fact_B'], 'goal_B': ['fact_C', 'goal_A'],
-             'unknown_A': ['uh','fact_A','unknown1','uhhh']}
+             'unknown_A': ['fact_A','unknown1','uhhh']}
 
 backward_chaining_system = BackwardChaining(known_facts, rule_base)
 
